@@ -13,7 +13,7 @@ const App = () => {
       setLoadingScan(true);
       console.log(`Scanned data:`, scanData);
 
-      const url = `http://localhost:5000/url/ai/?data=${encodeURIComponent(scanData)}`;
+      const url = `http://kairoshk.ddns.net:5000/url/ai/?data=${encodeURIComponent(scanData)}`;
 
       try {
         const response = await fetch(url);
